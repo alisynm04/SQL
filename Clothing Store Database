@@ -1,0 +1,45 @@
+--create a clothing store database
+
+/**clothing store:
+T shirts (25)
+shorts (37)
+socks (12)
+Underwear (40)
+Pants (56)
+Jacket (17)
+Sweaters (30)
+Tennis Shoes (45)
+long sleeve shirts (25)
+dress shoes (20)
+accessories (76)
+Scarves (34)
+Bras (27)
+Hair ties (15)
+Sunglasses (22)
+**/
+
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT INTO clothing_store VALUES (1, "tshirts", 25, 1, 15);
+INSERT INTO clothing_store VALUES (2, "shorts", 37, 2, 20);
+INSERT INTO clothing_store VALUES (3, "socks", 12, 3, 4);
+INSERT INTO clothing_store VALUES (4, "underwear", 40, 3, 5);
+INSERT INTO clothing_store VALUES (5, "pants", 56, 2, 17);
+INSERT INTO clothing_store VALUES (6, "jacket", 17, 1, 19);
+INSERT INTO clothing_store VALUES (7, "sweaters", 30, 1, 14);
+INSERT INTO clothing_store VALUES (8, "tennis Shoes", 45, 3, 30);
+INSERT INTO clothing_store VALUES (9, "long sleeve shirts", 25, 1, 10);
+INSERT INTO clothing_store VALUES (10, "dress shoes", 20, 3, 40);
+INSERT INTO clothing_store VALUES (11, "accessories", 76, 4, 4);
+INSERT INTO clothing_Store VALUES (12, "scarves", 34, 4, 8);
+INSERT INTO clothing_store VALUES (13, "bras", 27, 3, 12);
+INSERT INTO clothing_store VALUES (14, "hair ties", 15, 4, 1);
+INSERT INTO clothing_store VALUES (15, "sunglasses", 22, 4, 13);
+
+SELECT * FROM clothing_store;
+
+--display clothing by aisles from database order by price
+SELECT * FROM clothing_store WHERE aisle ORDER BY price;
+
+--what is the total price of all clothing in the store?
+SELECT SUM (price) FROM clothing_store;
