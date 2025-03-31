@@ -76,3 +76,5 @@ ORDER BY "fighting_Skills" desc;
 
 --What marvels are over 20 popularity and over 5 intelligence?
 SELECT name, popularity FROM marvels WHERE popularity >=20 AND intelligence >=5 ORDER BY popularity asc; 
+
+
