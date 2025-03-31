@@ -43,3 +43,4 @@ SELECT * FROM clothing_store WHERE aisle ORDER BY price;
 
 --what is the total price of all clothing in the store?
 SELECT SUM (price) FROM clothing_store;
+
